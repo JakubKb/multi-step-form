@@ -12,9 +12,10 @@
       href="./assets/images/favicon-32x32.png"
     />
 
+    <link rel="stylesheet" href="style.css" />
+
     <title>Frontend Mentor | Multi-step form</title>
 
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
     <style>
       .attribution {
         font-size: 11px;
@@ -26,15 +27,12 @@
     </style>
   </head>
   <body>
-    <!-- Sidebar start -->
-
     <div class="stages">
       <button>1</button>
       <button>2</button>
       <button>3</button>
       <button>4</button>
     </div>
-    Step 1 Your info Step 2 Select plan Step 3 Add-ons Step 4 Summary
 
     <!-- Sidebar end -->
 
@@ -42,20 +40,17 @@
     <div class="stepOneContent">
       <h2>Personal info</h2>
       <p>Please provide your name, email address, and phone number.</p>
-      Name
+      <h5>Name</h5>
+
       <input type="text" class="name" placeholder="e.g. Stephen King" />
-      Email Address
+      <h5>Email Address</h5>
       <input
         type="text"
         class="email"
         placeholder="e.g. stephenking@lorem.com"
       />
-      Phone Number
-      <input
-        type="number"
-        class="phoneNum"
-        placeholder="e.g. +1 234 567 890 Next Step"
-      />
+      <h5>Phone Number</h5>
+      <input type="number" class="phoneNum" placeholder="e.g. +1 234 567 890" />
     </div>
     <!-- Step 1 end -->
 
