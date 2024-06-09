@@ -20,6 +20,7 @@
       .attribution {
         font-size: 11px;
         text-align: center;
+        display: none;
       }
       .attribution a {
         color: hsl(228, 45%, 44%);
@@ -57,27 +58,47 @@
     <!-- Step 2 start -->
     <div class="stepTwoContent">
       <h2>Select your plan</h2>
-      <p>You have the option of monthly or yearly billing.</p>
+      <p class="stepTwoDescription">
+        You have the option of monthly or yearly billing.
+      </p>
 
       <div class="arcade">
-        <h3>Arcade</h3>
-        <p>$9/mo</p>
+        <img src="./assets/images/icon-arcade.svg" alt="joystick icon" />
+        <span class="desc">
+          <h3>Arcade</h3>
+          <p>$9/mo</p>
+        </span>
       </div>
 
       <div class="advanced">
-        <h3>Advanced</h3>
-        <p>$12/mo</p>
+        <img
+          src="./assets/images/icon-advanced.svg"
+          alt="game controller icon"
+        />
+        <span class="desc">
+          <h3>Advanced</h3>
+          <p>$12/mo</p>
+        </span>
       </div>
 
       <div class="pro">
-        <h3>Pro</h3>
-        <p>$15/mo</p>
+        <img
+          src="./assets/images/icon-pro.svg"
+          alt="modern game controller icon"
+        />
+        <span class="desc">
+          <h3>Pro</h3>
+          <p>$15/mo</p>
+        </span>
       </div>
 
-      <div class="divFooter">
-        Monthly
-        <input type="checkbox" />
-        Yearly
+      <div class="stepTwoFooter">
+        <p class="monthlyText">Monthly</p>
+        <label class="switch">
+          <input type="checkbox" />
+          <span class="slider round"></span>
+        </label>
+        <p class="yearlyText">Yearly</p>
       </div>
     </div>
 
@@ -154,7 +175,7 @@
     </div>
 
     <footer>
-      <p>Go Back</p>
+      <button class="goBackBtn">Go Back</button>
       <button>Next Step</button>
     </footer>
   </body>
