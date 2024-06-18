@@ -1,4 +1,3 @@
-/* Istniejące CSS */
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap");
 
 :root {
@@ -73,6 +72,16 @@ body {
 }
 
 .stepTwoContent {
+  display: none;
+  justify-content: center;
+  flex-direction: column;
+  background-color: var(--White);
+  width: 90%;
+  padding: 30px;
+  border-radius: 10px;
+}
+
+.stepThreeContent {
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -83,7 +92,8 @@ body {
 }
 
 .stepOneContent h2,
-.stepTwoContent h2 {
+.stepTwoContent h2,
+.stepThreeContent h2 {
   font-size: 2rem;
   font-family: "Ubuntu", sans-serif;
   font-weight: 700;
@@ -105,6 +115,16 @@ body {
   font-family: "Ubuntu", sans-serif;
   font-weight: 400;
 }
+
+.stepThreeDesc {
+  color: var(--Cool-gray);
+  font-size: 19px;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
 .stepTwoDescription {
   margin-bottom: 20px;
   margin-top: 20px;
@@ -113,11 +133,12 @@ body {
   font-family: "Ubuntu", sans-serif;
   font-weight: 400;
   font-size: 15px;
-  color: var(--Marine-blue);
+  color: var (--Marine-blue);
   margin-bottom: 10px;
 }
 
-.stepTwoContent h3 {
+.stepTwoContent h3,
+.stepThreeContent h3 {
   font-family: "Ubuntu", sans-serif;
   font-weight: 700;
   font-size: 17px;
@@ -136,6 +157,21 @@ body {
   display: flex;
   align-items: center;
   flex-direction: row;
+  justify-content: space-between;
+}
+
+.onlineService,
+.largerStorage,
+.customizableProfile {
+  border: 1px solid var(--Light-gray);
+  border-radius: 7px;
+  margin-top: 15px;
+  padding: 17px;
+  padding-left: 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .arcade img,
@@ -151,8 +187,31 @@ body {
   flex-direction: column;
 }
 
+.stepThreeContent .desc p {
+  color: var(--Cool-gray);
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+}
+
+.stepThreeContent input[type="checkbox"] {
+  height: 50px;
+  width: 25px;
+  margin-right: 20px;
+  border-radius: 7px;
+  accent-color: var(--Purplish-blue);
+}
+
 .desc p {
   font-size: 17px;
+}
+
+.additionalPrice {
+  color: var(--Purplish-blue);
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+  font-size: 17px;
+  margin-left: auto;
 }
 
 .stepTwoFooter {
@@ -275,8 +334,6 @@ input:checked + .slider:before {
 
 .slider.round {
   border-radius: 34px;
-
-  background-color: var(--Marine-blue);
 }
 
 .slider.round:before {
