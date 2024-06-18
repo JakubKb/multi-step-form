@@ -275,6 +275,8 @@ input:checked + .slider:before {
 
 .slider.round {
   border-radius: 34px;
+
+  background-color: var(--Marine-blue);
 }
 
 .slider.round:before {
@@ -284,4 +286,13 @@ input:checked + .slider:before {
 .yearlyText,
 .monthlyText {
   font-weight: 700;
+}
+
+.active {
+  color: var(--Marine-blue) !important;
+}
+
+.planActive {
+  border: 2px solid var(--Purplish-blue);
+  background-color: var(--Magnolia) !important;
 }
