@@ -238,6 +238,7 @@ body {
   font-family: "Ubuntu", sans-serif;
   font-size: 15px;
   font-weight: 500;
+  width: 100%;
 }
 
 input::-webkit-outer-spin-button,
@@ -352,4 +353,8 @@ input:checked + .slider:before {
 .planActive {
   border: 2px solid var(--Purplish-blue);
   background-color: var(--Magnolia) !important;
+}
+
+.stageActive {
+  background-color: var(--Light-blue);
 }
