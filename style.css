@@ -157,7 +157,6 @@ body {
   display: flex;
   align-items: center;
   flex-direction: row;
-  justify-content: space-between;
 }
 
 .onlineService,
@@ -356,5 +355,6 @@ input:checked + .slider:before {
 }
 
 .stageActive {
-  background-color: var(--Light-blue);
+  background-color: var(--Light-blue) !important;
+  color: navy !important;
 }
