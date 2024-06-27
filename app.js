@@ -1,4 +1,24 @@
 document.addEventListener("DOMContentLoaded", (event) => {
+  const inputs = document.querySelectorAll(".name, .phoneNum, .email");
+  const errorMsg = document.querySelector(".error");
+  let allValid = false;
+
+  function validateInputs() {
+    allValid = true;
+    for (let input of inputs) {
+      if (input.value.trim() === "") {
+        errorMsg.style.display = "block";
+        input.style.border = "1px solid red";
+        allValid = false;
+      } else {
+        input.style.border = "";
+      }
+    }
+    if (allValid) {
+      errorMsg.style.display = "none";
+    }
+  }
+
   let step = 1;
   const stepContent = document.querySelectorAll(
     ".stepOneContent, .stepTwoContent, .stepThreeContent, .stepFourContent"
@@ -27,7 +47,8 @@ document.addEventListener("DOMContentLoaded", (event) => {
 
   const nextBtn = document.querySelector(".nextBtn");
   nextBtn.addEventListener("click", () => {
-    if (step < stepContent.length) {
+    validateInputs();
+    if (allValid && step < stepContent.length) {
       step++;
       updateStepDisplay();
     }

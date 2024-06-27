@@ -358,3 +358,10 @@ input:checked + .slider:before {
   background-color: var(--Light-blue) !important;
   color: navy !important;
 }
+
+.error {
+  color: red !important;
+  font-size: 15px !important;
+  text-align: center;
+  display: none;
+}
