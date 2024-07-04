@@ -91,13 +91,32 @@ body {
   border-radius: 10px;
 }
 
+.stepFourContent {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: var(--White);
+  width: 90%;
+  padding: 30px;
+  border-radius: 10px;
+}
+
 .stepOneContent h2,
 .stepTwoContent h2,
-.stepThreeContent h2 {
+.stepThreeContent h2,
+.stepFourContent h2 {
   font-size: 2rem;
   font-family: "Ubuntu", sans-serif;
   font-weight: 700;
   color: var(--Marine-blue);
+}
+
+.stepFourContent h2 {
+  margin-bottom: 20px;
+}
+
+.stepFourDesc {
+  margin-bottom: 20px;
 }
 
 .stepOneContent p {
@@ -129,6 +148,14 @@ body {
   margin-bottom: 20px;
   margin-top: 20px;
 }
+
+.stepFourContent p {
+  color: var(--Cool-gray);
+  font-size: 19px;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+}
+
 .stepOneContent h5 {
   font-family: "Ubuntu", sans-serif;
   font-weight: 400;
@@ -139,6 +166,14 @@ body {
 
 .stepTwoContent h3,
 .stepThreeContent h3 {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+  font-size: 17px;
+  color: var(--Marine-blue);
+  margin-bottom: 10px;
+}
+
+.stepFourContent h4 {
   font-family: "Ubuntu", sans-serif;
   font-weight: 700;
   font-size: 17px;
@@ -157,6 +192,92 @@ body {
   display: flex;
   align-items: center;
   flex-direction: row;
+}
+
+.summary {
+  background-color: var(--Magnolia);
+  border-radius: 7px;
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+}
+
+.summaryTop {
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1px solid var(--Cool-gray);
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 15px;
+}
+
+.leftSideTop {
+  display: flex;
+  flex-direction: column;
+}
+
+.changeBtn {
+  text-decoration: underline;
+  background: none;
+  border: none;
+  font-size: 17px;
+  margin-top: -7px;
+  color: var(--Cool-gray);
+  width: 10px;
+  cursor: pointer;
+  text-decoration-thickness: 2px;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.finalPlanPrice {
+  color: var(--Marine-blue) !important;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700 !important;
+  font-size: 17px !important;
+}
+
+.bottom {
+  display: flex;
+  justify-content: space-between;
+}
+
+.leftSideBottom {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-top: 15px;
+}
+
+.rightSideBottom {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-top: 15px;
+}
+
+.rightSideBottom p {
+  font-size: 17px;
+  color: var(--Marine-blue);
+}
+
+.leftSideBottom p {
+  font-size: 17px !important;
+}
+
+.total {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 40px;
+  gap: 50px;
+}
+
+.finalPrice {
+  color: var(--Purplish-blue) !important;
+  font-weight: 700 !important;
+}
+
+.total p:first-of-type {
+  font-size: 17px !important;
 }
 
 .onlineService,
